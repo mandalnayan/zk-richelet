@@ -2,6 +2,6 @@
 <window title="Hello World!!" border="normal" width="200px">
 
 <label value="You are using: ${desktop.webApp.version}"/>
-<label value = "Home Page!!!"></label>
+<label value = "Admin Home Page!!!!!!!"></label>
 
 </window>
