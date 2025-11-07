@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+	Created by ZK Studio
+-->
+
+<zk>
+	<device-config>
+		<device-type>ajax</device-type>
+		<timeout-uri>/timeout.zul</timeout-uri><!-- An empty URL can cause the browser to reload the same URL -->
+	</device-config>
+	
+	<!-- Richelet  -->
+	<richlet>
+    <richlet-name>login</richlet-name><!-- your preferred name -->
+    <richlet-class>controller.TestRichlet</richlet-class><!-- your class name, of course -->
+	</richlet>
+	
+	<!-- Richelet mapping -->
+	<richlet-mapping>
+    <richlet-name>login</richlet-name>
+    <url-pattern>/login</url-pattern>
+    </richlet-mapping>
+    
+    <!-- different url but redirect to same page java file(login) -->
+    
+	<richlet-mapping>
+    <richlet-name>login</richlet-name>
+    <url-pattern>/admin/login</url-pattern>
+    </richlet-mapping>
+    
+    <!-- Add new Richlet java page -->
+    <richlet>
+    <richlet-name>product</richlet-name>
+    <richlet-class>controller.Test2Richlet</richlet-class>    
+    </richlet>
+    
+    <!-- Richelet mapping -->
+	<richlet-mapping>
+    <richlet-name>product</richlet-name>
+    <url-pattern>/product</url-pattern>
+    </richlet-mapping>
+    
+    <!-- Added implemented java file -->
+	 <richlet>
+    <richlet-name>productImp</richlet-name>
+    <richlet-class>controller.RichletImp</richlet-class>    
+    </richlet>
+    
+    <!-- Richelet mapping -->
+	<richlet-mapping>
+    <richlet-name>productImp</richlet-name>
+    <url-pattern>/imp-product</url-pattern>
+    </richlet-mapping>
+</zk>
